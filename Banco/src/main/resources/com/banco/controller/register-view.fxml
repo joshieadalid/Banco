@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="300.0" prefWidth="250.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="com.banco.controller.RegisterController">
+    <Label layoutX="25.0" layoutY="14.0" text="Registro">
+        <font>
+            <Font size="48.0" />
+        </font>
+    </Label>
+    <TextField fx:id="usernameTextField" layoutX="37.0" layoutY="150.0" promptText="Nombre de usuario" />
+    <PasswordField fx:id="passwordField" layoutX="37.0" layoutY="189.0" promptText="Contraseña" />
+    <Button fx:id="backButton" layoutX="37.0" layoutY="235.0" mnemonicParsing="false" onAction="#onBackButtonClick" text="Volver" />
+    <Button fx:id="registerButton" layoutX="130.0" layoutY="235.0" mnemonicParsing="false" onAction="#onRegisterButtonClick" text="Registrar" />
+</AnchorPane>

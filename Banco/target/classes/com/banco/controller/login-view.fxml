@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="anchorPane" prefHeight="300.0" prefWidth="250.0"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.banco.controller.LoginController">
+    <Label layoutX="48.0" layoutY="14.0" text="Banco">
+        <font>
+            <Font size="48.0"/>
+        </font>
+    </Label>
+    <TextField fx:id="usernameTextField" layoutX="37.0" layoutY="150.0" promptText="Usuario"/>
+    <PasswordField fx:id="passwordField" layoutX="37.0" layoutY="189.0" promptText="Contraseña"/>
+    <Button fx:id="enterButton" onAction="#onEnterButtonClick" layoutX="37.0" layoutY="235.0" mnemonicParsing="false" text="Entrar"/>
+    <Button fx:id="registerButton" onAction="#onRegisterButtonClick" layoutX="152.0" layoutY="235.0" mnemonicParsing="false" text="Registro"/>
+</AnchorPane>
